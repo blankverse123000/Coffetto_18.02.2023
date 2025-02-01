@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
+$headings-font-family: "Pacifico";
+$font-family-base: "Poppins";
+$dark: hsl(12, 42%, 12%);
+$primary: hsl(12, 32%, 22%);
+$secondary: hsl(39, 62%, 65%);
+$light: hsl(12, 24%, 32%);
+$base-color: #fff;
+$body-color: $base-color;
+$navbar-dark-brand-color: $base-color;
+$navbar-dark-hover-color: hsl(39, 62%, 65%);
+$navbar-dark-active-color: hsl(39, 62%, 65%);
+$input-border-color: $secondary;
+$navbar-dark-toggler-icon-bg: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm6 7h12v2H9v-2zm-6 7h18v2H3v-2z" fill="rgba(255,253,253,1)"/></svg>');
+$navbar-toggler-focus-width: 0;
+@import "bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.header-border {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(133, 118, 114) 50%,
+    transparent 50%
+  );
+  background-size: 24px;
+  z-index: 1000px;
+}
+
+.homBtn .homBtn-icon {
+  display: inline-block;
+  transition: 0.5s;
+  transform: translateX(-2px);
+}
+.homBtn:hover {
+  .homBtn-icon {
+    transform: translateX(2px);
+  }
+}
+.section-rounder {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.productBtn {
+  transition: 0.5s;
+}
+.productBtn:hover {
+  transform: translateY(3px);
+}
+.productCoffee {
+  .productCoffee-img {
+    display: inline;
+    transition: 0.5s;
+  }
+}
+.productCoffee:hover {
+  .productCoffee-img {
+    transform: translateY(-10px);
+  }
+}
+.steps-section {
+  background-image: url("./public/img/coffee-beans-bg.png");
+}
+.step {
+  height: 200px;
+  width: 200px;
+}
+.step {
+  .step-img {
+    transition: 0.5s;
+  }
+}
+.step:hover {
+  .step-img {
+    transform: translateY(-10px);
+  }
+}
+
+.step-border {
+  position: absolute;
+  // width: 35vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  margin: 0 auto;
+  // bottom: -50%;
+  z-index: -2;
+}
+
+.footer-logo {
+  width: 40px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .step-border {
+    position: absolute;
+    // width: 35vw;
+    top: 20%;
+    left: 40%;
+    transform: rotate(91deg);
+
+    // margin: 0 auto;
+    // bottom: -50%;
+    z-index: -2;
+  }
+}
+
+.btn-link {
+  color: $secondary !important;
+  transition: 0.3s;
+}
+.btn-link:hover {
+  color: #bc6c25 !important;
+}
